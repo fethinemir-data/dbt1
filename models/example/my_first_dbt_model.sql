@@ -6,12 +6,13 @@
 
     Try changing "table" to "view" below
 */
+-- use warehouse compute_dwh;
 
 {{ config(materialized='table') }}
 
 with source_data as (
 
-select * from Customer
+select 1
 
 )
 select *
